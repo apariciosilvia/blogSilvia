@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/contenidoArticulos.css">
+    <link rel="icon" type="image/x-icon" href="../../img/LOGOTIPO.png">
+</head>
+
+<body>
+    <div id="loader" class="loader">
+        <div class="square" id="sq1"></div>
+        <div class="square" id="sq2"></div>
+        <div class="square" id="sq3"></div>
+        <div class="square" id="sq4"></div>
+        <div class="square" id="sq5"></div>
+        <div class="square" id="sq6"></div>
+        <div class="square" id="sq7"></div>
+        <div class="square" id="sq8"></div>
+        <div class="square" id="sq9"></div>
+    </div>
+
+    <script src="../../javaScript/transicion.js"></script>
+    
+    <header id="encabezado" class="encabezadoMOVIL">
+        <div id="logotipo" class="logotipo">
+            <img src="../../img/LOGOTIPO.png" alt="LA FOTO NO ESTA DISPONIBLE">
+            <h1>HARDWORLD</h1>
+        </div>
+        <div id="menu-hamburguesa" class="menu-hamburguesa">
+            <input type="checkbox" id="toggleLista"> <label for="toggleLista" id="boton" class="boton">MENU</label>
+            <div id="elementos-menu" class="elementos-menu">
+                <ul id="lista" class="lista">
+                    <li><a href="../../index.html">PRINCIPAL</a></li>
+                    <li><a href="../../html/articulos.html">ARTÍCULOS</a></li>
+                    <li><a href="../../html/contacto.html">CONTACTO</a></li>
+                    <li><a href="../../html/sobreMi.html">SOBRE MI</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="cuerpo">
+        <div id="contenido" class="contenido">
+            <div id="fondo" class="fondo">
+                <div class="margenes">
+                    <a href="../articulos.html"><img src="../../img/flecha_blanca.png" width="5%" alt="volver"></a>
+
+                    <p>AUTOR: Silvia Aparicio Martín || Título: Mejorar rendimiennto del ordenador || Fecha: 15/11/2024</p>
+
+                    <h1>MEJORAR LA SEGURIDAD DEL ORDENADOR CON BITLOCKER</h1>
+                    <p>Si buscas proteger tus datos frente a accesos no autorizados, Windows ofrece una herramienta
+                        poderosa llamada **BitLocker**. Este sistema de cifrado de disco completo asegura que tus
+                        archivos estén protegidos, incluso si tu ordenador es robado o acceden físicamente a su
+                        almacenamiento. En este artículo, te explicamos paso a paso cómo usar BitLocker y mantener tus
+                        datos seguros.</p>
+                    <h2>1. ¿Qué es BitLocker?</h2>
+                    <p>BitLocker es una funcionalidad de cifrado disponible en versiones profesionales y empresariales
+                        de Windows. Con ella, puedes cifrar todo el disco duro o unidades específicas, garantizando que
+                        los datos solo sean accesibles mediante una clave o contraseña segura.</p>
+                    <h2>2. Requisitos para Usar BitLocker</h2>
+                    <p>Antes de empezar, asegúrate de que tu sistema cumpla con los requisitos básicos para usar
+                        BitLocker:</p>
+                    <ul>
+                        <li>Una versión compatible de Windows (Windows 10/11 Pro, Enterprise o Education).</li>
+                        <li>Un chip TPM (Trusted Platform Module) versión 1.2 o superior, aunque también puedes usar
+                            una unidad USB para almacenar la clave de recuperación si tu equipo no tiene TPM.</li>
+                        <li>Acceso de administrador en el equipo.</li>
+                    </ul>
+                    <h2>3. Cómo Activar BitLocker en el Disco Principal</h2>
+                    <p>El cifrado del disco principal garantiza que todo el sistema esté protegido. Sigue estos pasos:
+                    </p>
+                    <ol>
+                        <li><strong>Accede a la Configuración de BitLocker:</strong> Ve a Panel de Control >
+                            Cifrado de unidad BitLocker</li>
+                        <li><strong>Selecciona la unidad:</strong> Encuentra el disco donde está instalado Windows
+                            (normalmente, la unidad C:) y haz clic en Activar BitLocker</li>
+                        <li><strong>Elige un método de desbloqueo:</strong>
+                            <ul>
+                                <li>Usar una contraseña: Configura una contraseña segura para desbloquear el disco.</li>
+                                <li>Usar un dispositivo USB: Si tu equipo no tiene TPM, puedes optar por una unidad USB
+                                    que contenga la clave de desbloqueo.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Guarda tu clave de recuperación:</strong> Windows te pedirá guardar la clave de
+                            recuperación en caso de que olvides tu contraseña. Puedes: <ul>
+                                <li>Guardar en tu cuenta de Microsoft.</li>
+                                <li>Guardar en un archivo externo (USB u otra unidad).</li>
+                                <li>Imprimir la clave para almacenarla de manera segura.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Selecciona qué parte cifrar:</strong>
+                            <ul>
+                                <li>Solo los datos utilizados: Es más rápido, ideal para discos nuevos.</li>
+                                <li>Toda la unidad: Más seguro, recomendado para discos ya en uso.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Inicia el cifrado:</strong> Haz clic en Iniciar Cifrado y espera a que el
+                            proceso termine. Esto puede tomar tiempo dependiendo del tamaño de la unidad.</li>
+                    </ol>
+                    <h2>4. Cómo Cifrar Unidades Externas o Secundarias</h2>
+                    <p>BitLocker también funciona con discos duros externos, memorias USB y discos secundarios. Aquí te
+                        mostramos cómo hacerlo:</p>
+                    <ol>
+                        <li>Conecta la unidad que deseas cifrar.</li>
+                        <li>Ve a Panel de Control > Cifrado de unidad BitLocker</li>
+                        <li>Encuentra la unidad externa en la lista y haz clic en Activar BitLocker</li>
+                        <li>Sigue los mismos pasos para configurar el método de desbloqueo, guardar la clave de
+                            recuperación y cifrar la unidad.</li>
+                    </ol>
+                    <h2>5. Cómo Administrar BitLocker</h2>
+                    <p>Una vez habilitado, puedes administrar BitLocker desde el mismo panel de control. Algunas
+                        opciones disponibles son:</p>
+                    <ul>
+                        <li>Cambiar la contraseña o clave de desbloqueo.</li>
+                        <li>Suspender temporalmente la protección (por ejemplo, para realizar actualizaciones
+                            importantes del sistema).</li>
+                        <li>Desactivar BitLocker y descifrar la unidad.</li>
+                    </ul>
+                    <h2>6. Consejos para el Uso Seguro de BitLocker</h2>
+                    <p>Para maximizar la seguridad de tu sistema, considera lo siguiente:</p>
+                    <ul>
+                        <li>Guarda la clave de recuperación en un lugar seguro y fuera del alcance de terceros.</li>
+                        <li>No compartas tu contraseña de desbloqueo con nadie que no confíes plenamente.</li>
+                        <li>Realiza copias de seguridad regulares de tus archivos importantes antes de cifrarlos.</li>
+                    </ul>
+                    <h2>7. Solución de Problemas</h2>
+                    <p>Si encuentras problemas al usar BitLocker, aquí hay algunas soluciones comunes:</p>
+                    <ul>
+                        <li><strong>No puedes activar BitLocker:</strong> Verifica si tu versión de Windows es
+                            compatible y si tienes permisos de administrador.</li>
+                        <li><strong>Olvidaste la clave de recuperación:</strong> Busca la clave en el lugar donde la
+                            guardaste (cuenta de Microsoft, archivo, impresión, etc.). Sin esta clave, no podrás acceder
+                            a los datos cifrados.</li>
+                        <li><strong>Rendimiento lento:</strong> En discos mecánicos (HDD), el cifrado puede afectar el
+                            rendimiento. Considera cambiar a un SSD para mejores resultados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="piePagina" class="piePagina">
+        <div id="suscribete" class="suscribete">
+            <p>
+                SUSCRÍBETE
+                <input type="text" placeholder="Ingresa tu correo">
+                <button type="button">Enviar</button>
+            </p>
+        </div>
+        <div id="contacto" class="contacto">
+            <p>Teléfono: 678 53 34 34 || <a href="https://workspace.google.com/intl/es-419/gmail/">Correo:
+                    apariciosilvia8@gmail.com</a> </p>
+        </div>
+        <div id="derechos" class="derechos">
+            <p xmlns:cc="http://creativecommons.org/ns#">Esta obra está licenciada bajo
+                <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"rel="licencia noopener noreferrer">CC BY-NC 4.0
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="derechos">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="derechos">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="derechos">
+                </a>
+            </p>
+        </div>
+        <div id="redesSociales" class="redesSociales">
+            <a target="_blank" href="https://www.instagram.com/"><img src="../../img/instagram.png" alt="instagram"></a>
+            <a target="_blank" href="https://workspace.google.com/intl/es-419/gmail/"><img src="../../img/gmail.png" alt="gmail"></a>
+            <a target="_blank" href="https://www.youtube.com/"><img src="../../img/youtube.png" alt="youtube"></a>
+            <a target="_blank" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES"><img src="../../img/facebook.png" alt="facebook"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
